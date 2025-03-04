@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sergeolimta| Web Developer & Graphiste</title>
+    <link rel="icon" type="image/x-icon" href="https://image.noelshack.com/fichiers/2025/06/7/1739080401-picsart-01-15-11-10-52.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #1b1b1f;
+    color: #ffffff;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+.container {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding: 50px 0;
+}
+header {
+    background: linear-gradient(45deg, #ff4d4d, #ff6600);
+    padding: 100px 0;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+header h1 {
+    font-size: 3em;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+        
+        h2 {
+            color: #ff6600;
+            text-align: center;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        .highlight {
+            color: #ff4d4d;
+            font-weight: bold;
+        }
+        .emoji {
+            font-size: 1.2em;
+        }
+.profile-card {
+    margin-top: -80px;
+    padding: 40px;
+    background: #222;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    animation: slideIn 1.5s ease-in-out;
+}
+.profile-card img {
+    width: 150px;
+    border-radius: 50%;
+    border: 5px solid #ff4d4d;
+    animation: couleur 5s alternate infinite;
+}
+.profile-card h2 {
+    margin-top: 10px;
+    font-size: 2em;
+}
+.socials a {
+    display: inline-block;
+    margin: 10px;
+    text-decoration: none;
+    color: #ff4d4d;
+    transition: 0.3s;
+}
+.socials a:hover {
+    color: #ff6600;
+}
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: 80px;
+    margin: 20px 0;
+    position: relative;
+}
+.carousel-item {
+    min-width: 100%;
+    text-align: center;
+    font-size: 2em;
+    animation: slide 10s infinite;
+}
+.story-box {
+    padding: 20px;
+    background: #333;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+footer {
+    padding: 20px;
+    background: #111;
+    text-align: center;
+}
+
+@keyframes slide {
+    0%, 100% { transform: translateX(0%); }
+    20% { transform: translateX(-100%); }
+    40% { transform: translateX(-200%); }
+    60% { transform: translateX(-300%); }
+    80% { transform: translateX(-400%); }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes slideIn {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: 200px; /* Ajuste la hauteur pour inclure l'image */
+    margin: 20px 0;
+    position: relative;
+    align-items: center; /* Centre verticalement */
+}
+
+.carousel-item {
+    min-width: 100%;
+    text-align: center;
+    font-size: 2em;
+    animation: slide 10s infinite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill-text {
+    font-size: 1.5em;
+    margin-bottom: 10px; /* Espace entre le texte et l'image */
+}
+
+.skill-image {
+    width: 100px; /* Taille de l'image */
+    height: auto;
+    border-radius: 10px; /* Bord arrondi */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Ombre */
+}
+
+@keyframes slide {
+    0%, 100% { transform: translateX(0%); }
+    20% { transform: translateX(-100%); }
+    40% { transform: translateX(-200%); }
+    60% { transform: translateX(-300%); }
+    80% { transform: translateX(-400%); }
+}
+    .whatsapp-icon {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #25D366;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+    .whatsapp-icon i {
+        margin-right: 8px;
+    }
+    .whatsapp-icon:hover {
+        background-color: #1DA850;
+    }
+        #contactForm {
+            display: flex;
+            flex-direction: column;
+            max-width:80%;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            margin: 0 auto;
+            
+        }
+
+        #contactForm input,
+        #contactForm textarea {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 2px solid white;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            border-radius:10px 
+        }
+
+        #contactForm button {
+            padding: 10px 20px;
+            background-color: #FFD700;
+            color: #000;
+            border: none;
+            cursor: pointer;
+            animation: couleur 2s linear infinite;
+        }
+        @keyframes couleur{
+          
+  0%{
+    background:#4edbf7 ;
+    box-shadow: 0px 0px 50px #4edbf7;
+  }
+    10%{
+    background: #1793a6;
+    box-shadow: 0px 0px 50px #1793a6
+  }
+    20%{
+    background: #44f5b3;
+    box-shadow: 0px 0px 50px #44f5b3;
+  }
+    30%{
+    background: #82fd5a;
+    box-shadow: 0px 0px 50px #82fd5a;
+  }
+    40%{
+    background: #3b8922;
+    box-shadow: 0px 0px 50px  #3b8922;
+  }  50%{
+    background: #e0fa59;
+    box-shadow: 0px 0px 50px #e0fa59;
+  }
+  60%{
+    background: #758815;
+    box-shadow: 0px 0px 50px #758815;
+  }
+    70%{
+    background: #f87d31;
+    box-shadow: 0px 0px 50px #f87d31;
+  }
+    80%{
+    background: #a94617;
+    box-shadow: 0px 0px 50px #a94617;
+  }
+    90%{
+    background: #fa433a;
+    box-shadow: 0px 0px 50px #fa433a;
+  }
+    100%{
+    background: #fa3a5d;
+    box-shadow: 0px 0px 50px #fa3a5d;
+  }
+   #contactForm {
+    width: 45%;
+  }
+
+</style>
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1>Bienvenue dans mon Univers !</h1>
+        <p>Développeur Web <br> | Graphiste |   <br>Étudiant à l'Université de Lomé</p>
+    </div>
+</header>
+
+<section class="profile">
+    <div class="container">
+        <div class="profile-card">
+            <img src="https://image.noelshack.com/fichiers/2025/06/7/1739080401-picsart-01-15-11-10-52.jpg" alt="Photo de profil" class="card-photo"> 
+            <h2>Sergeo Limta</h2>
+            <p>Développeur Web & Graphiste Proffessionnel<br>  |Étudiant a l'Université de Lomé|  </p>
+            <div class="socials">
+                <a href="https://www.facebook.com/profile.php?id=100081846934886" target="_blank">Facebook</a>
+                <a href="#" target="_blank">LinkedIn</a>
+                <a href="https://api.whatsapp.com/send?phone=+228 96564590" target="_blank">WhatsApp</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="skills">
+    <div class="container">
+        <h2>Mes Compétences</h2>
+        <div class="carousel">
+            <!-- Compétence 1 -->
+            <div class="carousel-item active">
+                <div class="skill-text">HTML & CSS</div>
+                <img src="https://image.noelshack.com/fichiers/2025/10/1/1741036266-images-1.jpeg" alt="HTML & CSS" class="skill-image">
+            </div>
+            <!-- Compétence 2 -->
+            <div class="carousel-item">
+                <div class="skill-text">JavaScript</div>
+                <img src="https://image.noelshack.com/fichiers/2025/10/1/1741037236-t-l-chargement-4.png" alt="JavaScript" class="skill-image">
+            </div>
+            <!-- Compétence 3 -->
+            <div class="carousel-item">
+                <div class="skill-text">Graphisme</div>
+                <img src="https://image.noelshack.com/fichiers/2025/10/1/1741037642-t-l-chargement-6.png" alt="Design Graphique" class="skill-image">
+            </div>
+            <!-- Compétence 4 -->
+            <div class="carousel-item">
+                <div class="skill-text">WordPress</div>
+                <img src="https://image.noelshack.com/fichiers/2025/10/1/1741037056-t-l-chargement-3.png" alt="WordPress" class="skill-image">
+            </div>
+            <!-- Compétence 5 -->
+            <div class="carousel-item">
+                <div class="skill-text">UI/UX Design</div>
+                <img src="https://image.noelshack.com/fichiers/2025/10/1/1741037535-images-1.png" alt="UI/UX Design" class="skill-image">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="stories">
+    <div class="container">
+        <h2>Petites Histoires</h2>
+        
+        <p>Bienvenue dans mon monde de narration. Je partage ici des histoires pour inspirer et divertir tous mes potes.</p>
+        <div class="story-box">
+            
+    <h2>Lis ceci😱👇</h2>
+    <p>Salut à tous ! Je m'appelle <span class="highlight">Sergeo</span>, et je vais vous raconter une petite aventure de ma journée. Prêt à décoller ? <span class="emoji">😏</span> Ok !</p>
+
+    <p>Ce matin, un peu stressé par les congés, je suis sorti pour chercher un job dans le coin. J'ai commencé par une promenade, inspectant tous les chantiers de maçonnerie <span class="emoji">(fatigué, mais motivé 🤭)</span>. Sur une large route, j'ai croisé un objet bizarre posé au milieu de la route : <span class="highlight">un truc de fétiche, emballé dans un foulard rouge 🦞</span>. Je l'ai dépassé en insultant mentalement le propriétaire.</p>
+
+    <p>En revenant, à <span class="highlight">200 mètres</span> de l'objet, j'ai remarqué un homme très noir, avec une pagne noire autour du cou. Intrigué, je l'ai observé de loin. Il m'a vu et a essayé de me saluer, mais j'ai fait semblant de ne pas le remarquer. À <span class="highlight">100 mètres</span> de lui, je l'ai suivi à distance, et lui a accéléré le pas aussi. Soudain, il s'est arrêté brusquement et a commencé à ouvrir le foulard rouge <span class="emoji">😳</span> <span class="highlight">(là, j'ai reculé de trois pas 🙄...😂.<br>Bref j'avais pas peur hein !, apres tout j'suis un homme moi 😎🤏 !)</span>. Je l'ai observé attentivement et j'ai vu qu'il versait le contenu du foulard par terre. Et ce qu'il y avait dedans... <span class="highlight">hummmm...</span> <span class="emoji">(je ne vous le dirai pas, c'est trop inhumain !)</span>.</p>
+
+    <h2>Points marquants :</h2>
+    <ul>
+        <li><span class="highlight">Le stress des congés</span> : moi je cherche un job, motivé mais fatigué.</li>
+        <li><span class="highlight">L'objet mystérieux</span> : Un fétiche emballé dans un foulard rouge <span class="emoji">🦞</span>, posé au milieu de la route.</li>
+        <li><span class="highlight">L'homme énigmatique</span> : Un homme noir avec une pagne noire, qui attire mon attention.</li>
+        <li><span class="highlight">La scène intrigante</span> : L'homme ouvre le foulard rouge, et je recule, intrigué et un peu effrayé <span class="emoji">😳</span>.</li>
+        <li><span class="highlight">Le suspense final</span> : Le contenu du foulard reste un mystère <span class="emoji">(trop inhumain pour être révélé !)</span>.</li>
+    </ul>
+
+    <p>Cette histoire mêle humour, suspense et une touche de mystère, que j'ai voulus partager avec vous <span class="emoji">😊</span><br>Merci beaucoup pour ton attention!<br>Tchaooo!!!👋</p>
+
+        </div>
+    </div>
+</section>
+<center>
+  <div>
+  <p>Écrit moi un message WhatsApp en privé !</p>
+  <a href="https://api.whatsapp.com/send?phone=+228 96564590" class="whatsapp-icon">
+    <i class="fab fa-whatsapp"></i>
+    Envoyez-moi un message<br> WhatsApp
+</a>
+ <form id="contactForm" action="mailto:sergeodlb@gmail.com" method="post" enctype="text/plain">
+    <input type="text" id="name" name="name" placeholder="Ton nom..." required>
+    <input type="email" id="email" name="email" placeholder="Ton Email..." required>
+    <textarea id="message" name="message" placeholder="Écris-moi ton message ici..." required></textarea>
+    <button type="submit">Envoyer</button>
+</form>
+  </div>
+</center>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2025 | Conçu avec ❤️ par Sergeo Limta</p>
+    </div>
+</footer>
+
+<script >
+  let items = document.querySelectorAll('.carousel-item');
+let index = 0;
+
+function nextSlide() {
+    items[index].classList.remove('active');
+    index = (index + 1) % items.length;
+    items[index].classList.add('active');
+}
+
+setInterval(nextSlide, 2000);
+  
+
+</script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histoire de Sergeo</title>
+    <style>
+
+    </style>
+</head>
+<body></body>
+</html>
